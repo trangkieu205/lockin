@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-
+export default function Test() {
+  return (<>
+  <h1>hello</h1></>)
+}
 export default function App() {
   return (
   <Router>
@@ -15,6 +18,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
-  </Router>
+  </Router>,
+  <Test />
   );
 }
