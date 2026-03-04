@@ -1,17 +1,5 @@
 # LockIn – Health & Fitness Desktop App
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Electron-Desktop-blue?logo=electron" />
-  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react" />
-  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js" />
-  <img src="https://img.shields.io/badge/Express-API-black?logo=express" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
-</p>
-
-<p align="center">
-  A personal health & fitness management desktop application built with Electron.
-</p>
-
 ---
 
 ## Overview
