@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# LockIn Fitness App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Giới thiệu
 
-## Available Scripts
+**LockIn Fitness App** là ứng dụng desktop hỗ trợ quản lý sức khỏe và thay đổi vóc dáng, giúp người dùng:
 
-In the project directory, you can run:
+* Tính toán các chỉ số cơ thể (BMI, BMR, TDEE)
+* Thiết lập mục tiêu (giảm mỡ, tăng cơ, duy trì cân nặng)
+* Theo dõi dinh dưỡng (Meal Log)
+* Theo dõi luyện tập (Workout Log)
+* Theo dõi thư giãn (Relaxation Log)
+* Quản lý kế hoạch cá nhân (Paid Plan)
+* Nhận thông báo và bài viết từ Admin
 
-### `npm start`
+Ứng dụng được phát triển theo hướng **offline-first**, lưu trữ dữ liệu cục bộ bằng JSON.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kiến trúc hệ thống
 
-### `npm test`
+Ứng dụng được triển khai dưới dạng **Electron Desktop Application** với kiến trúc phân tầng:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Frontend:** React + Vite
+* **Backend nội bộ:** Node.js + Express (chạy in-process)
+* **Lưu trữ:** Local JSON files (`jsonStore.ts`)
+* **Electron:** Main Process – Preload – Renderer (IPC Bridge)
 
-### `npm run build`
+Các module chính:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Auth
+* Profile
+* Stats
+* Logs (Meal / Workout / Relaxation)
+* Foods
+* Exercises
+* Admin (Blog, Notification, User Management)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Vai trò người dùng
 
-### `npm run eject`
+* **User:** Theo dõi sức khỏe, ghi log, xem thống kê
+* **Admin:** Quản lý dữ liệu dinh dưỡng, bài tập, blog, notification
+* **Paid User:** Sử dụng kế hoạch cá nhân hóa
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tính năng chính
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Đăng ký / Đăng nhập (có thể tích hợp Google OAuth)
+* Tính toán chỉ số cơ thể
+* Ghi nhận bữa ăn và tính calories
+* Ghi nhận hoạt động luyện tập
+* Ghi nhận hoạt động thư giãn
+* Dashboard thống kê tổng hợp
+* Phân quyền người dùng
+* Quản lý nội dung và thông báo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Công nghệ sử dụng
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Electron
+* React
+* Vite
+* Node.js
+* Express
+* JSON-based storage
+* Figma (thiết kế UI)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Clone repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone <repository-url>
+cd lockin
+```
 
-### Analyzing the Bundle Size
+###  Cài đặt dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install
+```
 
-### Making a Progressive Web App
+###  Chạy ứng dụng ở môi trường development (Desktop)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run dev:desktop
+```
 
-### Advanced Configuration
+Ứng dụng sẽ được mở dưới dạng Electron Desktop App.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Cấu trúc dữ liệu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Dữ liệu được lưu trong các file JSON riêng biệt cho:
 
-### `npm run build` fails to minify
+* users
+* foods
+* exercises
+* logs
+* notifications
+* blogs
+* transactions
+* plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Hướng phát triển tương lai
+
+* Đồng bộ cloud thay vì chỉ local
+* Mobile version
+* AI gợi ý thực đơn chính xác hơn
+* Coach cá nhân hóa
+* Hệ thống thanh toán online hoàn chỉnh
+
+---
+
