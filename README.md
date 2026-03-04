@@ -19,7 +19,7 @@ The application is designed with an **offline-first architecture**, storing data
 ## Demo
 
 <p align="center">
-  <a scr='https://drive.google.com/drive/folders/17cfYcBN78LCm2nYaJIrs26Omzox9z21T'>App Demo</a>
+  <a href='https://drive.google.com/drive/folders/17cfYcBN78LCm2nYaJIrs26Omzox9z21T'>App Demo</a>
 </p>
 
 
