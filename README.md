@@ -1,120 +1,167 @@
-# LockIn Fitness App
+# LockIn – Health & Fitness Desktop App
 
-## Giới thiệu
+<p align="center">
+  <img src="https://img.shields.io/badge/Electron-Desktop-blue?logo=electron" />
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js" />
+  <img src="https://img.shields.io/badge/Express-API-black?logo=express" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
-**LockIn Fitness App** là ứng dụng desktop hỗ trợ quản lý sức khỏe và thay đổi vóc dáng, giúp người dùng:
-
-* Tính toán các chỉ số cơ thể (BMI, BMR, TDEE)
-* Thiết lập mục tiêu (giảm mỡ, tăng cơ, duy trì cân nặng)
-* Theo dõi dinh dưỡng (Meal Log)
-* Theo dõi luyện tập (Workout Log)
-* Theo dõi thư giãn (Relaxation Log)
-* Quản lý kế hoạch cá nhân (Paid Plan)
-* Nhận thông báo và bài viết từ Admin
-
-Ứng dụng được phát triển theo hướng **offline-first**, lưu trữ dữ liệu cục bộ bằng JSON.
+<p align="center">
+  A personal health & fitness management desktop application built with Electron.
+</p>
 
 ---
 
-## Kiến trúc hệ thống
+## Overview
 
-Ứng dụng được triển khai dưới dạng **Electron Desktop Application** với kiến trúc phân tầng:
+**LockIn** is a desktop application that helps users manage their health journey by tracking:
 
-* **Frontend:** React + Vite
-* **Backend nội bộ:** Node.js + Express (chạy in-process)
-* **Lưu trữ:** Local JSON files (`jsonStore.ts`)
-* **Electron:** Main Process – Preload – Renderer (IPC Bridge)
+* Body metrics (BMI, BMR, TDEE)
+* Nutrition intake
+* Workout sessions
+* Relaxation activities
+* Personal fitness plans
 
-Các module chính:
-
-* Auth
-* Profile
-* Stats
-* Logs (Meal / Workout / Relaxation)
-* Foods
-* Exercises
-* Admin (Blog, Notification, User Management)
+The application is designed with an **offline-first architecture**, storing data locally using JSON-based storage.
 
 ---
 
-## Vai trò người dùng
+## Demo
 
-* **User:** Theo dõi sức khỏe, ghi log, xem thống kê
-* **Admin:** Quản lý dữ liệu dinh dưỡng, bài tập, blog, notification
-* **Paid User:** Sử dụng kế hoạch cá nhân hóa
+<p align="center">
+  <img src="[docs/demo.gif](https://drive.google.com/drive/folders/17cfYcBN78LCm2nYaJIrs26Omzox9z21T)" alt="App Demo" width="800"/>
+</p>
 
----
-
-## Tính năng chính
-
-* Đăng ký / Đăng nhập (có thể tích hợp Google OAuth)
-* Tính toán chỉ số cơ thể
-* Ghi nhận bữa ăn và tính calories
-* Ghi nhận hoạt động luyện tập
-* Ghi nhận hoạt động thư giãn
-* Dashboard thống kê tổng hợp
-* Phân quyền người dùng
-* Quản lý nội dung và thông báo
 
 ---
 
-## Công nghệ sử dụng
+## Architecture
 
-* Electron
-* React
-* Vite
-* Node.js
-* Express
-* JSON-based storage
-* Figma (thiết kế UI)
+LockIn follows a layered desktop architecture:
+
+```
+Electron (Main Process)
+│
+├── Preload (IPC Bridge)
+│
+└── Renderer (React + Vite)
+      │
+      └── Express API (in-process)
+              │
+              └── JSON File Storage
+```
+
+### Main Modules
+
+* Authentication
+* Profile Management
+* Stats & Health Calculation
+* Meal Log
+* Workout Log
+* Relaxation Log
+* Admin Panel
+* Blog & Notification
+* Paid Plan Management
 
 ---
 
-### Clone repository
+## User Roles
+
+| Role      | Description                                   |
+| --------- | --------------------------------------------- |
+| User      | Track personal health and fitness             |
+| Paid User | Access personalized fitness plans             |
+| Admin     | Manage foods, exercises, blogs, notifications |
+
+---
+
+## Tech Stack
+
+| Layer    | Technology               |
+| -------- | ------------------------ |
+| Desktop  | Electron                 |
+| Frontend | React + Vite             |
+| Backend  | Node.js + Express        |
+| Storage  | JSON-based local storage |
+| Design   | Figma                    |
+
+---
+
+## Getting Started
+
+### 1️⃣ Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/lockin.git
 cd lockin
 ```
 
-###  Cài đặt dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-###  Chạy ứng dụng ở môi trường development (Desktop)
+### 3️⃣ Run in Development Mode
 
 ```bash
 npm run dev:desktop
 ```
 
-Ứng dụng sẽ được mở dưới dạng Electron Desktop App.
+The Electron desktop app will launch automatically.
 
 ---
 
-## Cấu trúc dữ liệu
+## 📂 Project Structure
 
-Dữ liệu được lưu trong các file JSON riêng biệt cho:
-
-* users
-* foods
-* exercises
-* logs
-* notifications
-* blogs
-* transactions
-* plans
+```
+lockin/
+│
+├── electron/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── store/
+│
+├── server/
+├── data/
+├── docs/
+└── package.json
+```
 
 ---
 
-## Hướng phát triển tương lai
+## Features
 
-* Đồng bộ cloud thay vì chỉ local
+* User authentication
+* BMI / BMR / TDEE calculation
+* Nutrition tracking with calorie counting
+* Workout tracking with calories burned
+* Relaxation tracking
+* Dashboard analytics
+* Admin content management
+* Role-based authorization
+
+---
+
+## Future Improvements
+
+* Cloud synchronization
 * Mobile version
-* AI gợi ý thực đơn chính xác hơn
-* Coach cá nhân hóa
-* Hệ thống thanh toán online hoàn chỉnh
+* AI-powered meal recommendations
+* Online payment integration
+* Smart coach suggestions
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
+
+<p align="center">
+  Due to project scope and time limitations, several UI refinements and advanced logic features are planned for future improvement.
+</p>
