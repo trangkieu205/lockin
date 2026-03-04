@@ -31,7 +31,7 @@ The application is designed with an **offline-first architecture**, storing data
 ## Demo
 
 <p align="center">
-  <img src="[docs/demo.gif](https://drive.google.com/drive/folders/17cfYcBN78LCm2nYaJIrs26Omzox9z21T)" alt="App Demo" width="800"/>
+  <img src="(https://drive.google.com/drive/folders/17cfYcBN78LCm2nYaJIrs26Omzox9z21T)" alt="App Demo" width="800"/>
 </p>
 
 
@@ -91,20 +91,20 @@ Electron (Main Process)
 
 ## Getting Started
 
-### 1️⃣ Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/your-username/lockin.git
 cd lockin
 ```
 
-### 2️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Run in Development Mode
+### Run in Development Mode
 
 ```bash
 npm run dev:desktop
@@ -114,7 +114,7 @@ The Electron desktop app will launch automatically.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 lockin/
@@ -157,7 +157,7 @@ lockin/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
