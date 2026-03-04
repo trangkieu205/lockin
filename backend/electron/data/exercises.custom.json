@@ -1,0 +1,12 @@
+[
+
+  {
+    "id": 100001,
+    "title": "Dashing",
+    "category": "Cardiovascular",
+    "met": 4,
+    "isCustom": true,
+    "imagePrimaryUri": "/assets/exercises/custom/dashing.png",
+    "createdAt": "2025-12-21T04:14:08.841Z"
+  }
+]

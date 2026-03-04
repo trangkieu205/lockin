@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Box Breathing (4-4-4-4)",
+    "category": "Breathing",
+    "desc": "Inhale 4s, hold 4s, exhale 4s, hold 4s. Repeat 5 rounds.",
+    "steps": ["Inhale 4 seconds", "Hold 4 seconds", "Exhale 4 seconds", "Hold 4 seconds", "Repeat 5 rounds"],
+    "suggestedMinutes": 5,
+    "isVerified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "imageUri": null
+  },
+  {
+    "id": 2,
+    "title": "Neck & Shoulder Release",
+    "category": "Stretching",
+    "desc": "Slow neck circles and shoulder rolls to release tension.",
+    "suggestedMinutes": 3,
+    "isVerified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "imageUri": null
+  },
+  {
+    "id": 3,
+    "title": "Progressive Muscle Relaxation",
+    "category": "Recovery",
+    "desc": "Tense and relax muscle groups from toes to head.",
+    "suggestedMinutes": 8,
+    "isVerified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "imageUri": null
+  }
+]

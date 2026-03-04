@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1765864673860,
+    "date": "2025-12-22",
+    "title": "Running",
+    "category": "Cardiovascular",
+    "minutes": 30,
+    "caloriesBurned": 0,
+    "loggedAt": "2025-12-22T03:42:55.277Z"
+  },
+  {
+    "id": 1765864673859,
+    "date": "2025-12-22",
+    "title": "Squats",
+    "category": "Strength Training",
+    "minutes": 30,
+    "caloriesBurned": 210,
+    "loggedAt": "2025-12-22T03:06:05.977Z"
+  },
+  {
+    "id": 1765864673858,
+    "date": "2025-12-22",
+    "title": "Push-ups",
+    "category": "Strength Training",
+    "minutes": 30,
+    "caloriesBurned": 180,
+    "loggedAt": "2025-12-22T03:05:47.904Z"
+  },
+  {
+    "id": 1765864673857,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 3,
+    "titleSnapshot": "Cycling",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 15,
+    "caloriesBurned": 107
+  },
+  {
+    "id": 1765864631434,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 3,
+    "titleSnapshot": "Cycling",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 10,
+    "caloriesBurned": 71
+  },
+  {
+    "id": 1765864614296,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 1,
+    "titleSnapshot": "Jogging",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 10,
+    "caloriesBurned": 74
+  },
+  {
+    "id": 1765863924430,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 1,
+    "titleSnapshot": "Jogging",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 14,
+    "caloriesBurned": 103
+  },
+  {
+    "id": 1765863907820,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 2,
+    "titleSnapshot": "Jump rope",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 10,
+    "caloriesBurned": 116
+  },
+  {
+    "id": 1765856756428,
+    "loggedAt": "2025-12-16T12:00:00",
+    "exerciseId": 1,
+    "titleSnapshot": "Jogging",
+    "categorySnapshot": "Cardiovascular",
+    "minutes": 20,
+    "caloriesBurned": 147
+  }
+]

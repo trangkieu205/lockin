@@ -1,0 +1,16 @@
+[
+  {
+    "name": "OatMeal",
+    "brand": "quaker",
+    "caloriesPer100g": 0,
+    "proteinPer100g": 0,
+    "carbPer100g": 0,
+    "fatPer100g": 0,
+    "servingSizeG": 100,
+    "servingLabel": "1 serving (100g)",
+    "imagePrimaryUri": null,
+    "id": -1765863836974,
+    "createdAt": "2025-12-16T05:43:56.974Z",
+    "isVerified": false
+  }
+]

@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "White rice (cooked)", "brand": null, "caloriesPer100g": 130, "proteinPer100g": 2.7, "carbPer100g": 28.2, "fatPer100g": 0.3, "servingSizeG": 150, "servingLabel": "1 bowl (~150g)", "imagePrimaryUri": "assets/foods/rice.png", "isVerified": true },
+  { "id": 2, "name": "Chicken breast", "brand": null, "caloriesPer100g": 165, "proteinPer100g": 31, "carbPer100g": 0, "fatPer100g": 3.6, "servingSizeG": 100, "servingLabel": "100 g", "imagePrimaryUri": "assets/foods/chicken breast.png", "isVerified": true },
+  { "id": 3, "name": "Banana", "brand": null, "caloriesPer100g": 89, "proteinPer100g": 1.1, "carbPer100g": 22.8, "fatPer100g": 0.3, "servingSizeG": 118, "servingLabel": "1 medium (~118g)", "imagePrimaryUri": "assets/foods/banana.png", "isVerified": true },
+  { "id": 4, "name": "Whole egg", "brand": null, "caloriesPer100g": 143, "proteinPer100g": 12.6, "carbPer100g": 0.7, "fatPer100g": 9.5, "servingSizeG": 50, "servingLabel": "1 egg (~50g)", "imagePrimaryUri": "assets/foods/egg.png", "isVerified": true },
+  { "id": 5, "name": "Oatmeal (dry)", "brand": null, "caloriesPer100g": 389, "proteinPer100g": 16.9, "carbPer100g": 66.3, "fatPer100g": 6.9, "servingSizeG": 40, "servingLabel": "1/2 cup (~40g)", "imagePrimaryUri": "assets/foods/oats.png", "isVerified": true },
+  { "id": 6, "name": "Greek yogurt (plain)", "brand": null, "caloriesPer100g": 59, "proteinPer100g": 10.3, "carbPer100g": 3.6, "fatPer100g": 0.4, "servingSizeG": 170, "servingLabel": "1 cup (~170g)", "imagePrimaryUri": "assets/foods/greek yogurt.png", "isVerified": true },
+  { "id": 7, "name": "Apple", "brand": null, "caloriesPer100g": 52, "proteinPer100g": 0.3, "carbPer100g": 13.8, "fatPer100g": 0.2, "servingSizeG": 182, "servingLabel": "1 medium (~182g)", "imagePrimaryUri": "assets/foods/apple.png", "isVerified": true },
+  { "id": 8, "name": "Milk (whole)", "brand": null, "caloriesPer100g": 61, "proteinPer100g": 3.2, "carbPer100g": 4.8, "fatPer100g": 3.3, "servingSizeG": 240, "servingLabel": "1 cup (240ml)", "imagePrimaryUri": "assets/foods/milk.png", "isVerified": true }
+]

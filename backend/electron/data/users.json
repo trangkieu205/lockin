@@ -1,0 +1,22 @@
+[
+  {
+    "id": 2,
+    "email": "123@gmail.com",
+    "name": "trang vu",
+    "age": 20,
+    "createdAt": "2025-12-22T15:10:59.103Z",
+    "salt": "e98e7797e3ef85b68bf2d0e507711e59",
+    "passwordHash": "a503624b3e2cefbb0eb26346546e162318536ac6f23e4fc82d770c6506dbcb58",
+    "role": "user"
+  },
+  {
+    "id": 1,
+    "email": "demo@lockin.local",
+    "name": "Demo User",
+    "age": 20,
+    "createdAt": "2025-12-14T13:48:54.192Z",
+    "salt": "27a8f8142b7db40f90715993adaf16d2",
+    "passwordHash": "49d53a02f0f219a2acd49292a684bee5616133c1db970750dc01d3581d3e3c1d",
+    "role": "admin"
+  }
+]

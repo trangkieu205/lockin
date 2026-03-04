@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Running",
+    "category": "Cardiovascular",
+    "caloriesPerMinute": 10,
+    "desc": "Outdoor/indoor running",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/running.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Cycling",
+    "category": "Cardiovascular",
+    "caloriesPerMinute": 8,
+    "desc": "Stationary or road cycling",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/cycling.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Jump Rope",
+    "category": "Cardiovascular",
+    "caloriesPerMinute": 11,
+    "desc": "Fast paced jump rope",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/jump-rope.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 101,
+    "title": "Push-ups",
+    "category": "Strength Training",
+    "caloriesPerMinute": 6,
+    "desc": "Standard push-ups",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/push-ups.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 102,
+    "title": "Squats",
+    "category": "Strength Training",
+    "caloriesPerMinute": 7,
+    "desc": "Bodyweight squats",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/squats.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 103,
+    "title": "Plank",
+    "category": "Strength Training",
+    "caloriesPerMinute": 4,
+    "desc": "Hold plank position",
+    "isVerified": true,
+    "imagePrimaryUri": "/assets/exercises/plank.png",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]
